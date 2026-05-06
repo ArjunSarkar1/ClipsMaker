@@ -23,3 +23,11 @@ The basic flow of would be in the following key steps:
 **4.1** Finds clips and presents them to user
 
 Note: we will use a S3 key to uniquely identify and retrieve videos inside S3.
+
+To further explain the backend structure:
+
+We will authenticate the request with a bearer token, download the input video from S3 and each folder will contain all associated files/videos/clips identified by a unique id.
+
+Next, we will transcribe the video by extracting the audio from video with FFMPEG, then use WhisperX which is built on top of OpenAI's Whisper (great for long videos) and we will get a list of words with their associated timestamps.
+
+Now, we need to focus on finding viral moments in the video, I am still open to options like Llama 3.0, Google Gemini 2.5 with emphasis on scoring (hook, emotional intensity, value/insight, clarity, shareability). Then, we parse llm output as JSON with reasoning behind why it was scored that way.
