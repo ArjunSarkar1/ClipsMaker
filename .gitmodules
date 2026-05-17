@@ -1,0 +1,3 @@
+[submodule "LR-ASD"]
+	path = LR-ASD
+	url = https://github.com/Junhua-Liao/LR-ASD.git

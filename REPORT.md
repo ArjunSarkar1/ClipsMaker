@@ -1,4 +1,6 @@
-# Report #1
+# Report 1
+
+`version-1` branch :
 
 Our current implementation contains high coupling and low cohesion such as `clips.py`. This makes it hard to test, swap components or scale any individual part without breaking the others.
 
