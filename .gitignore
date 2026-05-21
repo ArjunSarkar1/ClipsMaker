@@ -1,1 +1,51 @@
+# Python basics
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Environment variables / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Logs
+*.log
+log.md
+
+# OS junk
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Modal / cloud / cache
+.modal/
+.cache/
+*.tmp
+
+# Video files
 *.mp4
+*.mov
+*.mkv
+*.avi
+
+# Large model / dataset folders 
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
